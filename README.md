@@ -1,2 +1,2 @@
-# setbuddy-api
-The backend API for SetBuddy
+# SetBuddy
+Repository for the SetBuddy application. Front-end and back-end included.
