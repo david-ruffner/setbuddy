@@ -1,0 +1,289 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 37% 7% auto;
+    background-color: var(--background-grey);
+}
+
+#side_container {
+    grid-column: 1;
+    background-image: url("../resources/images/login_piano_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr max-content 1fr;
+} 
+
+#side_container > h1 {
+    font-family: Oswald Medium;
+    color: white;
+    font-size: 52pt;
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+}
+
+#side_container > h1 > span {
+    font-family: Oswald Extra Light;
+    margin-left: 5px;
+}
+
+#side_container > h2 {
+    font-family: Raleway Extra Light;
+    font-size: 36pt;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    justify-self: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#side_container > img {
+    justify-self: center;
+    align-self: flex-end;
+}
+
+#login_container {
+    grid-column: 3;
+    display: grid;
+    grid-template-rows: 20% repeat(10, max-content);
+    grid-template-columns: auto;
+}
+
+#login_container > h1 {
+    grid-row: 2;
+    grid-column: 1;
+    z-index: 1;
+    font-family: Oswald Medium;
+    font-size: 36pt;
+}
+
+#login_container > h2 {
+    grid-row: 3;
+    grid-column: 1;
+    z-index: 1;
+    font-family: Raleway Extra Light;
+    font-size: 24pt;
+    /* margin-top: 40px; */
+}
+
+#username_input_container {
+    grid-row: 4;
+    grid-column: 1;
+    z-index: 1;
+}
+
+.login_input_container {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.login_input_container:nth-of-type(2) {
+    margin-top: 50px;
+    grid-row: 5;
+    grid-column: 1;
+    z-index: 1;
+}
+
+.login_input {
+    font-family: Raleway Medium;
+    font-size: 32pt;
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    padding-left: 50px;
+}
+
+.login_input::placeholder {
+    font-family: Raleway Extra Light;
+}
+
+.input_icon {
+    position: relative;
+    z-index: 2;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.login_input_container > h3 {
+    font-family: Oswald Medium;
+    font-size: 20pt;
+    margin: 0;
+    padding: 0;
+}
+
+#password_input_container {
+    grid-row: 5;
+}
+
+#password_input_container > .input_icon {
+    margin-top: 10px;
+}
+
+.forgot_password_link {
+    grid-row: 6;
+    grid-column: 1;
+    z-index: 1;
+    margin-top: 20px;
+    font-family: Raleway Light;
+    font-size: 18pt;
+    color: black;
+}
+
+.forgot_password_link:hover {
+    color: var(--logo-blue);
+}
+
+.forgot_password_link:visited {
+    color: var(--logo-blue);
+}
+
+#login_container > h4 {
+    font-family: Raleway Extra Light;
+    font-size: 20pt;
+    grid-row: 7;
+    grid-column: 1;
+    z-index: 1;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.login_remember_checkbox {
+    grid-row: 8;
+    grid-column: 1;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.login_remember_checkbox:hover {
+    cursor: pointer;
+}
+
+#login_container > svg {
+    grid-column: 1;
+    grid-row: 8;
+    z-index: 2;
+    pointer-events: none;
+    margin-left: -20px;
+    margin-top: -7px;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+}
+
+.check {
+    stroke-dashoffset: -100;
+}
+
+@-webkit-keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @-webkit-keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+  
+  @keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+
+@-webkit-keyframes dash-check-reverse {
+    0% {
+        stroke-dashoffset: 900;
+    }
+    100% {
+        stroke-dashoffset: -100;
+    }
+}
+
+@keyframes dash-check-reverse {
+    0% {
+        stroke-dashoffset: 900;
+    }
+    100% {
+        stroke-dashoffset: -100;
+    }
+}
+
+.login_button {
+    grid-row: 9;
+    width: 250px;
+    height: 75px;
+    font-family: Oswald Medium;
+    font-size: 24pt;
+    background-color: var(--charcoal-grey);
+    color: white;
+    border: 0;
+    margin-top: 50px;
+    border-radius: 0px;
+    transition: background-color 250ms, border-radius 250ms;
+}
+
+.login_button:hover {
+    cursor: pointer;
+    background-color: var(--logo-blue);
+    border-radius: 15px;
+    transition: background-color 250ms, border-radius 250ms;
+}
+
+@media (max-width: 1920px) {
+    #login_container {
+        grid-template-rows: 15% repeat(10, max-content);
+    }
+}
+
+@media (max-width: 1680px) {
+    #login_container {
+        grid-template-rows: 10% repeat(10, max-content);
+    }
+}
+
+@media (max-width: 1440px) {
+    #login_container {
+        grid-template-rows: 0% repeat(10, max-content);
+    }
+
+    .login_button {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1420px) {
+    #side_container {
+        display: none;
+    }
+}

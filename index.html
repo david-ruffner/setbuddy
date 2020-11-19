@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>SetBuddy</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/login.css" />
+        <link rel="icon" href="./resources/icons/logo.png" />
+    </head>
+
+    <body>
+
+        <div id="side_container">
+            <img src="./resources/icons/logo.png" width="200px"/>
+            <h1>Set<span>Buddy</span></h1>
+            <h2>The easy way to keep track of your music, and level up your ability.</h2>
+        </div>
+
+        <div id="login_container">
+            <h1>Log Into SetBuddy</h1>
+            <h2>Enter Your Login Details Below</h2>
+            <div class="login_input_container" id="username_input_container">
+                <h3>USERNAME</h3>
+                <input type="text" id="username_input" placeholder="bob@gmail.com" class="login_input">
+                <img src="./resources/icons/username_icon.png" class="input_icon" width="25px" />
+            </div>
+            <div class="login_input_container" id="password_input_container">
+                <h3>PASSWORD</h3>
+                <input type="password" id="password_input" placeholder="Enter Your Password" class="login_input">
+                <img src="./resources/icons/password_icon.png" class="input_icon" width="25px" />
+            </div>
+            <a href="#" class="forgot_password_link">Forgot Your Password?</a>
+            <h4>Remember Me</h4>
+            <div class="login_remember_checkbox"></div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2" width="75px">
+                <polyline class="path check" fill="none" stroke="var(--logo-blue)" stroke-width="9" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+            </svg>
+            <button class="login_button">Login</button>
+        </div>
+
+        <!-- jQuery CDN -->
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
